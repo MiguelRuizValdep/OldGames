@@ -23,9 +23,8 @@ public class DatosConsola extends Fragment {
     private ImageView imagen;
     private Consola consola;
     private final String RUTA="fuentes/consola.ttf";
-    private final String RUTA2="fuentes/texto.ttf";
     private final String RUTA3="fuentes/ChelaOne.ttf";
-    private Typeface fuente,fuente2,fuente3;
+    private Typeface fuente,fuente3;
 
 
     @Override
@@ -34,7 +33,6 @@ public class DatosConsola extends Fragment {
         View vista=inflater.inflate(R.layout.fragment_datos_consola, container, false);
 
         fuente=Typeface.createFromAsset(getContext().getAssets(),RUTA);
-        fuente2=Typeface.createFromAsset(getContext().getAssets(),RUTA2);
         fuente3=Typeface.createFromAsset(getContext().getAssets(),RUTA3);
 
         nombre=(TextView)vista.findViewById(R.id.dtsNombre);
@@ -49,7 +47,7 @@ public class DatosConsola extends Fragment {
 
         anio.setTypeface(fuente3);
         company.setTypeface(fuente3);
-        descripcion.setTypeface(fuente2);
+        descripcion.setTypeface(fuente3);
         detalles.setTypeface(fuente3);
 
 

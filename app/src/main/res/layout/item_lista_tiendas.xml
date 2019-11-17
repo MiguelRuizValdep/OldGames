@@ -20,9 +20,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/selector_tienda"
+            android:background="@drawable/selector_juego"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="4dp">
 
             <ImageView
                 android:id="@+id/lsTiendaimagen"
@@ -30,14 +30,14 @@
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@mipmap/ic_launcher"
-                android:scaleType="fitXY"
+                android:scaleType="center"
                 android:contentDescription="TODO" />
 
             <TextView
                 android:id="@+id/lsTiendanombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/rojo_palo"
+                android:background="@color/negro"
                 android:gravity="center"
                 android:text="@string/defecto"
                 android:textColor="@color/oro"

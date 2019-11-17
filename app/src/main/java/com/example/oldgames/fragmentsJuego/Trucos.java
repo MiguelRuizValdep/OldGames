@@ -66,17 +66,6 @@ public class Trucos extends Fragment {
             rotar=0.0f;
         }
 
-        final ImageView img = new ImageView(getContext());
-        Picasso.with(img.getContext()).load(juego.getCaratula()).rotate(rotar).into(img, new com.squareup.picasso.Callback() {
-            @Override
-            public void onSuccess() {
-                layout.setBackground(img.getDrawable());
-            }
-
-            @Override
-            public void onError() {
-            }
-        });
 
 
         rv=(RecyclerView) vista.findViewById(R.id.recyclerTrucos);

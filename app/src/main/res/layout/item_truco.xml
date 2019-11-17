@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_margin="8dp"
-                android:background="@drawable/marco_truco_ecritura">
+                android:background="@drawable/marco_truco_titulo">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
