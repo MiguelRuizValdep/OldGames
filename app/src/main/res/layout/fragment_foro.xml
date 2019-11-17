@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragmentsJuego.Foro"
+    android:background="@color/negro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/fondo_mensajes"
+        android:weightSum="15"
+        android:padding="6dp"
+        android:id="@+id/layoutContent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/marco_mensajes_tres"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:layout_weight="2.5"
+            android:weightSum="10"
+            android:id="@+id/layoutTitulo">
+
+            <ImageView
+                android:id="@+id/foroFoto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/marco_mensaje_foto_self"
+                android:layout_weight="2.5"
+                android:scaleType="fitXY">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:layout_weight="7.5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:id="@+id/layoutTexto"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/foroNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/negro"
+                        android:textSize="18sp"
+                        android:layout_marginStart="10dp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:weightSum="8"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/marco_seis"
+                    android:padding="6dp"
+                    android:id="@+id/layoutControles">
+
+
+
+                        <Button
+                            android:id="@+id/foroBtnEnvia"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selector_opciones"
+                            android:text="@string/nuevo"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp"
+                            android:padding="3dp"
+                            android:layout_weight="2"
+                            android:layout_marginStart="3dp">
+                        </Button>
+
+                        <Button
+                            android:id="@+id/foroBtnCancela"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/selector_opciones"
+                            android:text="@string/cancelar"
+                            android:textColor="@android:color/white"
+                            android:textSize="9sp"
+                            android:padding="3dp"
+                            android:layout_weight="2"
+                            android:layout_marginStart="3dp"
+                            >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/foroBtnOrdena"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/selector_opciones"
+                            android:text="@string/Ordenar"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp"
+                            android:padding="3dp"
+                            android:layout_weight="2"
+                            android:layout_marginStart="3dp">
+                        </Button>
+
+                        <Button
+                            android:id="@+id/foroBtnrecarga"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/selector_opciones"
+                            android:text="@string/recargar"
+                            android:textColor="@android:color/white"
+                            android:textSize="9sp"
+                            android:padding="3dp"
+                            android:layout_weight="2"
+                            android:layout_marginStart="3dp">
+                        </Button>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:layout_weight="12.5"
+            android:id="@+id/layoutLv">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/foroMsj"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:background="@android:color/white"
+                android:visibility="gone"
+                android:textColor="@color/negro">
+
+            </TextView>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/foroRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:scrollbars="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="60dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/marco_mensajes_tres"
+            android:layout_gravity="bottom"
+            android:layout_weight="0"
+            android:id="@+id/layoutMns"
+            android:padding="7dp">
+
+            <EditText
+                android:id="@+id/foroAsunto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/marco_mensajes_uno"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:padding="3dp"
+                android:textColor="@color/negro"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/titulo"
+                android:textColorHint="@color/gris_oscuro">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/foroMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/marco_mensajes_uno"
+                android:hint="@string/mensaje"
+                android:inputType="textMultiLine"
+                android:padding="3dp"
+                android:textColor="@color/negro"
+                android:textColorHint="@color/gris_oscuro"
+                android:textSize="12sp">
+
+            </EditText>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

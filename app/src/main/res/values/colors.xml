@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF7000</color>
+    <color name="colorPrimaryDark">#FF3000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="verde">#00FF00</color>
+    <color name="negro">#000000</color>
+    <color name="gris_claro">#DDDDDD</color>
+    <color name="gris_oscuro">#999999</color>
+    <color name="oro">#EAC102</color>
+    <color name="amrillo_claro">#FFFF96</color>
+    <color name="violeta">#800080</color>
+    <color name="rojo">#FF0000</color>
+    <color name="rojo_palo">#BAFC38A7</color>
+
+</resources>

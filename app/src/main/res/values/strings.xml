@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">OldGames</string>
+    <string name="defecto">Nada que mostrar</string>
+    <string name="buscar">Buscar por nombre</string>
+    <string name="avatar">Avatar</string>
+    <string name="Alias">Alias</string>
+    <string name="correo">Correo electronico</string>
+    <string name="password">Password</string>
+    <string name="registro">Registrar</string>
+    <string name="login">Login</string>
+    <string name="nuevo">Nuevo</string>
+    <string name="detalles">Detalles</string>
+    <string name="ok">OK</string>
+    <string name="web">Página Web</string>
+    <string name="llamar">Llamar</string>
+    <string name="volver">Volver</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="titulo">Titulo</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="recargar">Recargar</string>
+    <string name="Ordenar">Oredenar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>
