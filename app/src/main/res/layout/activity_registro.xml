@@ -66,32 +66,34 @@
             android:id="@+id/alias"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/marco_cinco"
+            android:background="@drawable/marco_texto"
             android:padding="6dp"
             android:textSize="16sp"
             android:inputType="textPersonName"
             android:hint="@string/Alias"
             android:textColorHint="@color/negro"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:textColor="@color/colorPrimaryDark"
+            android:textCursorDrawable="@color/rojo"/>
 
         <EditText
             android:id="@+id/correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/marco_cinco"
+            android:background="@drawable/marco_texto"
             android:padding="6dp"
             android:layout_marginTop="25dp"
             android:inputType="textEmailAddress"
             android:textSize="16sp"
             android:hint="@string/correo"
             android:textColorHint="@color/negro"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:textColor="@color/colorPrimaryDark"
+            android:textCursorDrawable="@color/rojo"/>
 
         <EditText
             android:id="@+id/regpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/marco_cinco"
+            android:background="@drawable/marco_texto"
             android:layout_marginTop="25dp"
             android:padding="6dp"
             android:inputType="textPassword"
@@ -99,7 +101,7 @@
             android:hint="@string/password"
             android:textColorHint="@color/negro"
             android:textColor="@color/colorPrimaryDark"
-            />
+            android:textCursorDrawable="@color/rojo"/>
 
 
         <LinearLayout

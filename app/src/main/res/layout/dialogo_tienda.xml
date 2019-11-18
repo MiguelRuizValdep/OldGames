@@ -1,44 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".clasesActividad.ActivityTienda"
     android:orientation="vertical"
-    android:background="@color/negro"
-    android:padding="5dp">
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/marco_barra_tienda"
-        android:layout_marginBottom="5dp">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/barraTiendas"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tituloTienda"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:textSize="30sp" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.Toolbar>
-
-
-
-    </android.support.design.widget.AppBarLayout>
+    android:background="@android:color/transparent">
 
 
     <LinearLayout
@@ -46,7 +11,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="10"
-        android:background="@drawable/marco_tienda"
+        android:background="@drawable/fondo_dialogo_tienda"
         android:padding="3dp">
 
         <LinearLayout
@@ -59,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/dialogFoto"
-                android:scaleType="fitXY">
+                android:scaleType="center">
 
             </ImageView>
 
@@ -88,7 +53,7 @@
                     android:gravity="center"
                     android:padding="4dp"
                     android:textSize="20sp"
-                    android:textColor="@color/negro"
+                    android:textColor="@android:color/white"
                     android:textStyle="bold">
 
                 </TextView>
@@ -101,7 +66,7 @@
                     android:gravity="center"
                     android:padding="4dp"
                     android:textSize="20sp"
-                    android:textColor="@color/negro"
+                    android:textColor="@android:color/white"
                     android:textStyle="bold">
 
                 </TextView>
@@ -114,7 +79,7 @@
                     android:gravity="center"
                     android:padding="4dp"
                     android:textSize="20sp"
-                    android:textColor="@color/negro"
+                    android:textColor="@android:color/white"
                     android:textStyle="bold" >
 
                 </TextView>
@@ -162,4 +127,4 @@
 
 
 
-</LinearLayout>
+</RelativeLayout>

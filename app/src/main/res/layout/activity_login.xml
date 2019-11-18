@@ -60,13 +60,14 @@ tools:context=".clasesActividad.Login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/marco_cinco"
+                android:background="@drawable/marco_texto"
                 android:hint="@string/Alias"
                 android:inputType="textPersonName"
                 android:padding="6dp"
                 android:textColorHint="@color/negro"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textCursorDrawable="@color/rojo"/>
 
 
             <EditText
@@ -74,14 +75,15 @@ tools:context=".clasesActividad.Login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:background="@drawable/marco_cinco"
+                android:background="@drawable/marco_texto"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:padding="6dp"
                 android:textColor="@color/colorPrimaryDark"
                 android:textColorHint="@color/negro"
                 android:textSize="16sp"
-                android:visibility="visible"/>
+                android:visibility="visible"
+                android:textCursorDrawable="@color/rojo"/>
 
         </LinearLayout>
 
